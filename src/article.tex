@@ -1,0 +1,28 @@
+\documentclass{article}
+
+% Packages and configurations for the document
+\usepackage{packages}
+\usepackage{config}
+
+\usepackage{subfiles}
+
+\begin{document}
+\input{setup}
+\input{title}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\section{Introduction}
+
+This is a template \verb|article| class document, where sections can be
+organised into subfiles. The build system provided with this template
+can handle highly configurable source directory structures.
+
+\subfile{sections/section1}
+
+\subfile{sections/section2}
+
+\input{bibliography}
+\end{document}

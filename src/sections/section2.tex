@@ -1,0 +1,32 @@
+\documentclass[../article.tex]{subfiles}
+
+% Change defintion of input path
+\makeatletter
+\def\input@path{{../tex}}
+\makeatother
+
+\begin{document}
+\validinsub{%
+\input{title}%
+\tableofcontents%
+\listoffigures%
+\listoftables%
+\clearpage%
+}
+
+\section{The Second Section}
+
+This is the main body of the ``Second Section''. Here we have a referance
+to `\verb|ref1|' \cite{ref2}.
+
+\subsection{A subsection}
+
+The is subsection text: \blindtext
+
+\subsection{Yet Another Subsection}
+
+This is the second subsection body. here we have another referance \cite{ref4}.
+
+\validinsub{\input{bibliography}}
+\end{document}
+

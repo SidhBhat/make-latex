@@ -1,0 +1,33 @@
+% For random text
+\usepackage{blindtext}
+
+% hyperreferances throught document
+\usepackage{hyperref}
+
+%% Setup Hyperref
+\hypersetup{
+	bookmarks=true,         % show bookmarks bar?
+    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={LaTeX Article Template},    % title
+    pdfauthor={Siddharth Bhat},     % author
+    pdfsubject={LaTeX},     % subject of the document
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=blue,          % color of internal links (change box color with linkbordercolor)
+    citecolor=cyan,        % color of links to bibliography
+    filecolor=cyan,         % color of file links
+    urlcolor=magenta        % color of external links
+}
+
+% superscript referances
+\usepackage[superscript,biblabel]{cite}
+
+% For pictures
+\usepackage{graphicx}
+% For multiple figures a single figure environment
+\usepackage{subcaption}
+
+\usepackage{float}
