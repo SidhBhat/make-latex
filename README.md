@@ -3,7 +3,7 @@
 ## Introduction
 
 This is a makefile build system to build a fairly large 
-[$\LaTeX$](https://www.latex-project.org/) article or book. We use the subfile
+$\LaTeX$ [article or book](https://www.latex-project.org/). We use the subfile
 system to organise our porject. the makefile can besides your main document, build
 all the subfiles indivisually. The main benefit of this makefile is that the document's
 source and the build files are seperated, with all buildfiles being written to a
@@ -101,9 +101,16 @@ graph
 
 # Test Sources
 
-I store the $\LaTeX$ test project that I used to test this makefile in this release here.
-Devs can checkout the tag to test the makefile.
+I store the $\LaTeX$ test project that I used to test this makefile in this release
+[here][source-plain]. The former release does not contain the makefile itself, just the
+sources I would recommend downloading the plain sources and adding `src/`to
+`.git/info/exclude` so you can test before you commit. Another [tag][source-full] marks
+a complete setup of this project including the configured makefile.
 
 # Contributing
 
 I currently have no official channel for contributions, you can simply create a merge request.
+
+[source-plain]: https://github.com/SidhBhat/make-latex/releases/tag/test_sources
+<!-- not yet valid
+[source-full]:-->

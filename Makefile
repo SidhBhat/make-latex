@@ -11,15 +11,15 @@ BUILDIR  = build/
 ## NOTE: EVERYTHING BELOW IS RELATIVE TO SOURCE DIRECTORY NOTE ##
 # Subfiles Directory: where files compiled as subfiles are located
 # NOTE: these files should be compilable as independant latex files
-SUBDIR   = sections/
+SUBDIR   = subfiles/
 # TEX Directory: where you want make to search for your helper scripts
 TEXDIR   = tex/
 # Image Directory: where you want make to search for your images
 IMGDIR   = images/
 # The main tex file for the project
-MAINFILE = article.tex
+MAINFILE = main.tex
 # How you want the output pdf file to be called
-OUTPUT   = article.pdf
+OUTPUT   = main.pdf
 ## ---------------------------------------------- ##
 # The Shell interpreter
 SHELL    = bash
