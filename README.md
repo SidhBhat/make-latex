@@ -91,13 +91,50 @@ graph
 	ProjectDir-->buildir/
 	srcdir/-->subdir/
 	srcdir/-->texdir/
-    srcdir/-->imgdir/
-    srcdir/-->user_packages
-    srcdir/-->bibliography_files
-    srcdir/-->mainfile.tex
-    buildir/-->mainfile.pdf
-    buildir/-->subdir/-->subfile.pdf(s)
+	srcdir/-->imgdir/
+	srcdir/-->user_packages
+	srcdir/-->bibliography_files
+	srcdir/-->mainfile.tex
+	buildir/-->mainfile.pdf
+	buildir/-->sub-buildir/-->subfile.pdfs
 ```
+
+## Building your project
+
+We have a number of standard phony targets like `build`.
+```bash
+# build the main document
+make build
+# clean
+make clean
+```
+
+You can even specify the name of the output pdf wihout the directory prefix. for the
+subfiles prefix only the `SUBDIR` before the file name.
+
+```bash
+# build the main file
+make main.pdf
+# build some subfile
+make subfiles/somesubfile.pdf
+```
+
+You can get the list of all targets with:
+
+```bash
+make help
+```
+## Configuring dependancies
+
+There is one special target `generate-configfile`, which generates a file called `config.mk`.
+This file is then included in the main makefile.
+
+```bash
+make generate-configfile
+# or make config.mk
+```
+
+This file contains some varibles, where you can list the dependancies of the file.
 
 # Test Sources
 
