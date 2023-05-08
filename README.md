@@ -112,5 +112,4 @@ a complete setup of this project including the configured makefile.
 I currently have no official channel for contributions, you can simply create a merge request.
 
 [source-plain]: https://github.com/SidhBhat/make-latex/releases/tag/test_sources
-<!-- not yet valid
-[source-full]:-->
+[source-full]: https://github.com/SidhBhat/make-latex/releases/tag/test_sources_full
