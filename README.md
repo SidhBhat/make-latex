@@ -5,7 +5,7 @@
 This is a makefile build system to build a fairly large 
 $\LaTeX$ [article or book](https://www.latex-project.org/). We use the subfile
 system to organise our porject. the makefile can besides your main document, build
-all the subfiles indivisually. The main benefit of this makefile is that the document's
+all the subfiles individually. The main benefit of this makefile is that the document's
 source and the build files are seperated, with all buildfiles being written to a
 'buildir'.
 
